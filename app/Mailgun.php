@@ -2,16 +2,17 @@
 
 namespace App;
 
+use Illuminate\Support\Facades\Mail;
 
 /**
  * Description of Mailgun
  *
  * @author abdullah
  */
-class Mailgun implements MailProvider{
+class Mailgun extends Mail implements MailProvider{
     //put your code here
-    public function send() {
-        
+    public function sendEmail() {
+        dd($this->alwaysFrom('dsad'));
     }
 
 }

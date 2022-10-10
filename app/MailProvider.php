@@ -8,5 +8,5 @@ namespace App;
  * @author abdullah
  */
 interface MailProvider {
-    public function send();
+    public function sendEmail();
 }
