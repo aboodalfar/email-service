@@ -89,7 +89,7 @@ class TemplateParser
         $regex = '/\[\w.+?\]/m';
 
         preg_match_all($regex, $this->templateStr, $matches, PREG_SET_ORDER);
-
+        
         return $matches;
     }
 

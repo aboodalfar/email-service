@@ -28,7 +28,9 @@ trait MailTemplateFormTrait
 
     public function submit()
     {
-        $this->validate();
+       // $this->validate();
+        
+       // dd($this);
 
         if(isset($this->itemId) && $this->itemId) {
             $mailTemplate = MailTemplate::find($this->itemId);

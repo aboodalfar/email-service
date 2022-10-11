@@ -2,7 +2,7 @@
 namespace App\Repositories;
 use App\Repositories\Interfaces\MailProvider;
 
-class MailgunRepository implements MailProvider 
+class MandrillRepository implements MailProvider 
 {
     //INJECT REPOSITORY CLASS TO INTERACT WITH DB
     public function __construct(MailRepository $mailRepo )
@@ -25,7 +25,7 @@ class MailgunRepository implements MailProvider
     //this will actually interact with the API
     protected function sendEmailAPI()
     {
-        //TODO : implemet api
+         //TODO : implemet api
     }
 
 }

@@ -1,5 +1,6 @@
 <?php
+namespace App\Repositories\Interfaces;
 
 interface MailProvider {
-    public function sendSms($mobileNo,$msg);
+    public function sendEmail();
 }

@@ -22,7 +22,7 @@ class SendEmailController extends Controller
         $this->validate($request, [
            'name' => 'required',
            'email' => 'required|email',
-           'content' => 'required|min:10'
+           'content' => 'required'
         ]);
 
         $mailTemplate = MailTemplate::where('template_key', 'contact-us')->first();

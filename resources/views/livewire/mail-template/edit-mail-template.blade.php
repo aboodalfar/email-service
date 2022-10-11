@@ -22,9 +22,9 @@
         <script type="text/javascript" src="{{asset('js/tinymce.js')}}"></script>
 
         <script>
-//            initializeTinymce((content) => {
-//            @this.set('body', content);
-//            });
+            initializeTinymce((content) => {
+            @this.set('body', content);
+            });
         </script>
 
     @endpush
