@@ -1,5 +1,5 @@
 <?php
 
-interface ISmsProvider {
+interface MailProvider {
     public function sendSms($mobileNo,$msg);
 }
